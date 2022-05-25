@@ -1,7 +1,3 @@
-from secrets import choice
-from warnings import catch_warnings
-
-
 class Atm:
     def __init__(self,cardNumber,pin , balance):
         self.cardNUmber = cardNumber
