@@ -3,7 +3,7 @@ from warnings import catch_warnings
 
 
 class Atm:
-    def __init__(self,cardNumber,pin , balance=1000):
+    def __init__(self,cardNumber,pin , balance):
         self.cardNUmber = cardNumber
         self.pin = pin
         self.balance = balance
@@ -20,7 +20,8 @@ class Atm:
 
 cardNumber = int(input("Enter your card number: "))
 pin = int(input("Enter your pin: "))
-atm =  Atm(cardNumber,pin)
+balance = int(input("Enter your balance left: "))
+atm =  Atm(cardNumber,pin,balance)
 choice = int(input("press 1 for withdrawl 2 for balance enquiry: "))
 
 if(choice == 1):
